@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Wanderson Bruno</title>
+  <title>WA Landing Pages</title>
   <link rel="icon" type="image/svg+xml" href="assets/imagens/favicon.svg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,10 +12,16 @@
 
   <header>
     <div class="logo-container">
-      <span class="logo-text">Wanderson Bruno</span>
+      <img src="assets/imagens/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo-text">
+        <h1>WA Landing Pages</h1>
+        <p>Desenvolvedor Front-End</p>
+      </div>
     </div>
     <nav class="nav-links">
+      <a href="#inicio">Início</a>
       <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
     </nav>
     <button class="menu-toggle" id="menuToggle">
@@ -24,11 +30,30 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio">
       <div class="hero-content">
-        <h1>Desenvolvedor Web</h1>
-        <p>Crio landing pages, sites e sistemas para empresas e empreendedores</p>
-        <a href="#projetos" class="hero-btn">Ver Projetos</a>
+        <div class="hero-text">
+          <p class="hero-saudacao">Olá, eu sou</p>
+          <h1>Wanderson Marotta</h1>
+          <p class="hero-desc">Desenvolvedor Front-End especializado em criar <strong>landing pages</strong>, sites modernos, responsivos e profissionais.</p>
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn-outline">Fale Comigo</a>
+          </div>
+        </div>
+        <div class="hero-foto">
+          <img src="assets/imagens/perfil.jpg" alt="Wanderson Marotta" onerror="this.style.background='rgba(212,175,55,0.1)'; this.style.borderRadius='50%'">
+          <div class="foto-ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="sobre-content">
+        <p>Sou desenvolvedor Front-End focado em HTML, CSS e JavaScript. Crio landing pages e sites com design moderno e responsivo.</p>
+        <br>
+        <p>Técnico de farmácia desde 2006, conheci o mundo da tecnologia e adorei. Comecei a estudar, me aperfeiçoar a cada dia e hoje já desenvolvo projetos, sempre me atualizando.</p>
       </div>
     </section>
 
@@ -41,105 +66,65 @@
         <div class="projeto-card">
           <div class="projeto-img">
             <img src="assets/imagens/estetica.jpg" alt="Clínica Estética" onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80'">
-            <div class="projeto-overlay">
-              <span class="projeto-tag">Landing Page</span>
-            </div>
+            <div class="projeto-overlay"><span class="projeto-tag">Landing Page</span></div>
           </div>
           <div class="projeto-info">
             <h3>Clínica Estética</h3>
             <p>Landing page com vídeos fullscreen, galeria de serviços e 5 seções temáticas</p>
-            <div class="projeto-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://wandibruno03-crypto.github.io/estetica2/" target="_blank" class="projeto-btn">
-              <i class="fas fa-external-link-alt"></i> Ver Projeto
-            </a>
+            <div class="projeto-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://wandibruno03-crypto.github.io/estetica2/" target="_blank" class="projeto-btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
           </div>
         </div>
 
         <div class="projeto-card">
           <div class="projeto-img">
             <img src="assets/imagens/moveis.jpg" alt="Móveis Planejados" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80'">
-            <div class="projeto-overlay">
-              <span class="projeto-tag">Landing Page</span>
-            </div>
+            <div class="projeto-overlay"><span class="projeto-tag">Landing Page</span></div>
           </div>
           <div class="projeto-info">
             <h3>Móveis Planejados</h3>
-            <p>Site com navegação por arrasto, vídeos emloop, galeria interativa e temas por cômodo</p>
-            <div class="projeto-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://wandibruno03-crypto.github.io/moveis/" target="_blank" class="projeto-btn">
-              <i class="fas fa-external-link-alt"></i> Ver Projeto
-            </a>
+            <p>Site com navegação por arrasto, vídeos em loop, galeria interativa e temas</p>
+            <div class="projeto-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://wandibruno03-crypto.github.io/moveis/" target="_blank" class="projeto-btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
           </div>
         </div>
 
         <div class="projeto-card">
           <div class="projeto-img">
             <img src="assets/imagens/advocacia.jpg" alt="Advocacia" onerror="this.src='https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80'">
-            <div class="projeto-overlay">
-              <span class="projeto-tag">Landing Page</span>
-            </div>
+            <div class="projeto-overlay"><span class="projeto-tag">Landing Page</span></div>
           </div>
           <div class="projeto-info">
             <h3>Advocacia</h3>
             <p>Landing page institucional para escritório de advocacia</p>
-            <div class="projeto-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://wandibruno03-crypto.github.io/advocacia/" target="_blank" class="projeto-btn">
-              <i class="fas fa-external-link-alt"></i> Ver Projeto
-            </a>
+            <div class="projeto-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://wandibruno03-crypto.github.io/advocacia/" target="_blank" class="projeto-btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
           </div>
         </div>
 
         <div class="projeto-card">
           <div class="projeto-img">
             <img src="assets/imagens/reformas.jpg" alt="Reformas" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80'">
-            <div class="projeto-overlay">
-              <span class="projeto-tag">Landing Page</span>
-            </div>
+            <div class="projeto-overlay"><span class="projeto-tag">Landing Page</span></div>
           </div>
           <div class="projeto-info">
             <h3>Reformas</h3>
             <p>Site para empresa de reformas e construção civil</p>
-            <div class="projeto-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://wandibruno03-crypto.github.io/reformas/" target="_blank" class="projeto-btn">
-              <i class="fas fa-external-link-alt"></i> Ver Projeto
-            </a>
+            <div class="projeto-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://wandibruno03-crypto.github.io/reformas/" target="_blank" class="projeto-btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
           </div>
         </div>
 
         <div class="projeto-card">
           <div class="projeto-img">
             <img src="assets/imagens/petshop.jpg" alt="Pet Shop" onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80'">
-            <div class="projeto-overlay">
-              <span class="projeto-tag">Landing Page</span>
-            </div>
+            <div class="projeto-overlay"><span class="projeto-tag">Landing Page</span></div>
           </div>
           <div class="projeto-info">
             <h3>Pet Shop</h3>
             <p>Site completo com galeria de serviços, cards interativos e WhatsApp</p>
-            <div class="projeto-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="https://wandibruno03-crypto.github.io/petshop/" target="_blank" class="projeto-btn">
-              <i class="fas fa-external-link-alt"></i> Ver Projeto
-            </a>
+            <div class="projeto-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://wandibruno03-crypto.github.io/petshop/" target="_blank" class="projeto-btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
           </div>
         </div>
 
@@ -148,8 +133,8 @@
 
     <section class="contato" id="contato">
       <h2 class="section-title">Vamos Conversar?</h2>
-      <p class="section-subtitle">Precisa de um site? Entre em contato!</p>
-      <a href="https://wa.me/5511962759260?text=" onclick="event.preventDefault(); window.open('https://wa.me/5511962759260?text=' + encodeURIComponent('Olá! Vim pelo portfólio e gostaria de criar um site.'), '_blank');" class="contato-btn-whatsapp">
+      <p class="section-subtitle">Coloque sua empresa na internet e facilite o contato dos seus clientes</p>
+      <a href="#" onclick="redirecionarWhatsApp(); return false;" class="contato-btn-whatsapp">
         <i class="fab fa-whatsapp"></i> Falar no WhatsApp
       </a>
     </section>
@@ -158,11 +143,11 @@
   <footer>
     <div class="footer-icons">
       <a href="#" onclick="redirecionarWhatsApp(); return false;"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" onclick="redirecionarWhatsApp(); return false;"><i class="fab fa-instagram"></i></a>
-      <a href="#" onclick="redirecionarWhatsApp(); return false;"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/wandibruno03-crypto" target="_blank"><i class="fab fa-github"></i></a>
       <a href="#" onclick="redirecionarWhatsApp(); return false;"><i class="fab fa-linkedin"></i></a>
+      <a href="#" onclick="redirecionarWhatsApp(); return false;"><i class="fab fa-instagram"></i></a>
     </div>
-    <p>&copy; 2026 Wanderson Bruno. Todos os direitos reservados.</p>
+    <p>&copy; 2026 WA Landing Pages. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
