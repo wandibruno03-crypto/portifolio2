@@ -39,7 +39,7 @@ function initCarousel() {
   carouselTrack.style.display = 'block';
   var wrapper = document.createElement('div');
   wrapper.className = 'leque-wrapper';
-  wrapper.style.cssText = 'position:relative;width:100%;height:' + Math.min(450, window.innerWidth * 0.9) + 'px;overflow:hidden;perspective:1000px;cursor:grab;';
+  wrapper.style.cssText = 'position:relative;width:100%;overflow:hidden;perspective:1000px;cursor:grab;';
 
   var cardWidth = Math.min(500, window.innerWidth - 40);
   cards.forEach(function(card, i) {
@@ -53,6 +53,9 @@ function initCarousel() {
     wrapper.appendChild(card);
   });
 
+  var maxH = 0;
+  cards.forEach(function(card) { maxH = Math.max(maxH, card.offsetHeight); });
+  wrapper.style.height = maxH + 'px';
   carouselTrack.appendChild(wrapper);
 
   lequeGoTo(0);
